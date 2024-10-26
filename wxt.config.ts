@@ -1,4 +1,5 @@
 import { defineConfig } from "wxt";
+import react from "@vitejs/plugin-react";
 
 // See https://wxt.dev/api/config.html
 // export default defineConfig({
@@ -15,11 +16,20 @@ export default defineConfig({
     action: {
       default_title: "LinkedIn AI Reply",
     },
-    web_accessible_resources: [
+    // web_accessible_resources: [
+    //   {
+    //     matches: ["*://*.linkedin.com/*"],
+    //     resources: ["icon/*.png"], // Adjust this to your icon's actual location
+    //   },
+    // ],
+    content_scripts: [
       {
         matches: ["*://*.linkedin.com/*"],
-        resources: ["icon/*.png"], // Adjust this to your icon's actual location
+        js: ["content-scripts/overlay.js"],
       },
     ],
   },
+  vite: () => ({
+    plugins: [react()],
+  }),
 });

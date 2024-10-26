@@ -2,10 +2,12 @@ import { useState } from "react";
 import reactLogo from "@/assets/react.svg";
 import wxtLogo from "/wxt.svg";
 import "./App.css";
+// import MainComponent from "./components/MainComponent";
 
 function App() {
   return (
     <>
+      {/* <MainComponent /> */}
       <div className="flex justify-center items-center">
         <a href="https://wxt.dev" target="_blank">
           <img src={wxtLogo} className="logo" alt="WXT logo" />
