@@ -19,6 +19,7 @@ The extension is developed with the **WXT Framework**, utilizing React and TypeS
 ## Demo
 
 Watch a short video demonstration of the extension's features and UI interactions:  
-https://github.com/Shubham-S-Nimje/linkedIn-extension/demo.mp4
-
 > Click to watch the demonstration on GitHub.
+
+https://github.com/user-attachments/assets/2683d5a5-3ed4-49c3-b72a-f21d165dc279
+
