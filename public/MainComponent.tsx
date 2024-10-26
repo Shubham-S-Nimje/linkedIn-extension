@@ -49,7 +49,6 @@ const MainComponent = () => {
 
     const injectPopupIcon = (parent: HTMLElement) => {
       if (!parent.querySelector(".open-popup-icon")) {
-        parent.style.position = "relative";
         const container = document.createElement("div");
         container.className = "open-popup";
         container.setAttribute(
@@ -58,7 +57,7 @@ const MainComponent = () => {
         );
 
         const icon = document.createElement("img");
-        icon.className = "open-popup-icon w-8 h-8 cursor-pointer bg-black";
+        icon.className = "open-popup-icon w-8 h-8 cursor-pointer";
         icon.src = openPopUpIcon;
         icon.alt = "Popup Icon";
         container.appendChild(icon);
